@@ -1,0 +1,19 @@
+
+.idea/
+node_modules/
+dist/
+.env
+*.iml
+.angular-cli.json
+
+npm-debug.log
+
+# System Files.
+.DS_Store
+Thumbs.db
+
+# API BackEnd building data.
+node/
+target/
+.awcache/
+etc/
