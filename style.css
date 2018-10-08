@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "iFlash"; /* Имя шрифта */
+    src: url("fonts/iFlash 706.ttf"); /* Путь к файлу со шрифтом */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+.content {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.header {
+    display: flex;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    margin: 0;
+    font-family: "iFlash", sans-serif;
+    font-size: 14px;
+    color: #82C815;
+}
+
+.head-label {
+    width: 80px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.head-label:first-child {
+    margin-left: 0;
+}
+
+.characters {
+    width: 300px;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    height: 70px;
+    width: 80px;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.check {
+    width: 80px;
+    height: 70px;
+    display: flex;
+    background-color: #333;
+    margin-left: 5px;
+}
+
+.check input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.check-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+}
+
+.check-box::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url("images/check.png");
+    background-size: cover;
+}
+
+.check-box::after {
+    content: '';
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-image: url("images/cross.png");
+    background-size: cover;
+}
+
+.check input:checked + .check-box::before {
+    display: none;
+}
+
+.check input:checked + .check-box::after {
+    display: block;
+}
+
+.reset-wrap {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
+.btn-reset {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    padding-left: 5px;
+    background: none;
+    border: none;
+    background-image: url("images/reset.png");
+    background-size: cover;
+    cursor: pointer;
+    color: white;
+    font-family: "iFlash", sans-serif;
+    font-size: 17px;
+    outline:none;
+}
+
+.btn-reset:hover {
+    text-shadow: lawngreen 0 0 10px;
+}
